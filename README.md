@@ -8,7 +8,7 @@ If you are not familiar with functions.php, simply go to your WordPress Dashboar
 
 Other activity type you may want to exclude: 'rtmedia_like_activity' 'last_activity' 'rtmedia_comment_activity' 'bp_activity_reaction_like' 'reshare_update' 'rtmedia_update' 'created_group'
 
-If you are familiar with functions.php I suggest to use the following code instead of using the plugin:
+If you are familiar with functions.php I suggest you to use the following code instead of using the plugin:
 
 ```
 function buddydev_exclude_activity_types_from_recording( &$activity ) {
