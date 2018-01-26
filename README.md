@@ -10,7 +10,7 @@ Other activity type you may want to exclude: 'rtmedia_like_activity' 'last_activ
 
 If you are familiar with functions.php I suggest to use the following code instead of using the plugin:
 
-'''
+```
 function buddydev_exclude_activity_types_from_recording( &$activity ) {
 
     $excluded_types = array( 'joined_group', 'updated_profile', 'new_member', 'new_avatar' );
@@ -24,4 +24,4 @@ function buddydev_exclude_activity_types_from_recording( &$activity ) {
  
 }
 add_action( 'bp_activity_before_save', 'buddydev_exclude_activity_types_from_recording' );
-'''
+```
